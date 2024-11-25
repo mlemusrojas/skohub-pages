@@ -1,30 +1,30 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
-@prefix w3i: <https://w3id.org/>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix lcsh: <https://w3id.org/>.
 
-w3i:
+lcsh:
     a skos:ConceptScheme;
     dct:description
     "For works on the principles of management as a discipline"@en;
     dct:title "Management"@en;
-    skos:hasTopConcept w3i:39184, w3i:87e33 .
-w3i:39184
+    vann:preferredNamespaceUri lcsh:;
+    skos:hasTopConcept lcsh:39184, lcsh:87e33 .
+lcsh:39184
     a skos:Concept;
     skos:altlabel "Environmental stewardship"@en;
     skos:definition
         "For works on a multidisciplinary approach to the environmentally sound use and management of natural resources by applying principles from ecological engineering, environmental engineering, planning, environmental economics, and environmental law."@en;
-    skos:narrower w3i:8feb7;
+    skos:narrower lcsh:8feb7;
     skos:prefLabel "Environmental management"@en;
-    skos:topConceptOf w3i: .
-w3i:87e33
+    skos:topConceptOf lcsh: .
+lcsh:87e33
     a skos:Concept;
     skos:prefLabel "Knowledge management"@en;
-    skos:topConceptOf w3i: .
-w3i:8feb7
+    skos:topConceptOf lcsh: .
+lcsh:8feb7
     a skos:Concept;
     skos:altlabel "Biotic communities--Management"@en;
-    skos:broader w3i:39184;
-    skos:inScheme w3i:;
+    skos:broader lcsh:39184;
+    skos:inScheme lcsh:;
     skos:prefLabel "Ecosystem management"@en.
-
-
